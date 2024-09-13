@@ -1,3 +1,9 @@
+/* General Styling */
+body,html {
+    height: 100%;
+}
+
+
 /* Fonts */
 .lalezar-regular {
     font-family: "Lalezar", system-ui;
@@ -45,9 +51,111 @@
     right: -20px;
 }
 
-.mainLogo {
-    background-color: white;
-    mask-image: url(Caltech\ Logo\ 1.png);
+/* Mouse Animations */
+.topArrow {
+    animation: move 2s infinite;
 }
 
+.bottomArrow {
+    animation: move2 2s infinite;
+}
 
+.scrollWheel {
+    animation: stretch 2s infinite;
+}
+
+@keyframes stretch {
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(5%);
+    }
+}
+
+@keyframes move2 {
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInUp {
+    --animate-duration: 2s;
+}
+
+/* General Info */
+.welcome {
+    text-transform: uppercase;
+    color: #FF8A3E;
+    font-size: 4rem;
+}
+
+.img-container {
+    height: 50%;
+    padding: 0;
+  }
+  
+  .panoramicContainer {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+  }
+  
+  .panoramic {
+    height: 100%;
+    width: 100%;
+    background-image: url(Caltech_Entrance\ 1.png);
+    background-size: 180%, 180%;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .panoramicRow {
+    height: 100%;
+  }
+
+  /* Mission / Values */
+  
+  .missionGrid {
+    display: grid;
+    grid-template-columns: 1;
+  }
