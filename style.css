@@ -130,7 +130,7 @@ body,html {
   }
   
   .panoramicContainer {
-    height:100%;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,6 +150,7 @@ body,html {
   }
 
   .panoramicRow {
+    aspect-ratio: 4000 / 1868;
     height: 100%;
   }
 
@@ -157,5 +158,30 @@ body,html {
   
   .missionGrid {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;  
+  }
+
+  .missionHeading {
+    color: #FF6C0C;
+    font-size: 72px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 2;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .dotBG {
+    grid-column: 1;
+    grid-row: 1;
+    width: 45%;
+    aspect-ratio: 1 / 1;
+    background-color: #ffffff;
+opacity: 0.6;
+background-image: radial-gradient(#dadada 6px, #ffffff 6px);
+background-size: 28px 28px;
+    rotate: 45deg;
+    align-self: center;
+    justify-self: center;
   }
