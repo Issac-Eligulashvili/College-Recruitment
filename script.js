@@ -22,7 +22,7 @@ tl.to('.img-container', {
 gsap.set('.panoramic', { backgroundSize: '180% 180%' });
 
 tl.to('.panoramic', {
-backgroundSize: "140% 140%"
+    backgroundSize: "140% 140%"
 }, 0);
 
 tl.to('.panoramic', {
@@ -40,3 +40,5 @@ tl.to('.img-container', {
 tl.to('.panoramic', {
     backgroundSize: "180% 180%"
 }), 1;
+
+
