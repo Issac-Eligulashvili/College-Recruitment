@@ -159,7 +159,7 @@ body,html {
   .missionGrid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;  
+    grid-template-rows: 1fr;
   }
 
   .missionHeading {
@@ -175,7 +175,7 @@ body,html {
   .dotBG {
     grid-column: 1;
     grid-row: 1;
-    width: 45%;
+    width: 40%;
     aspect-ratio: 1 / 1;
     background-color: #ffffff;
 opacity: 0.6;
@@ -184,4 +184,15 @@ background-size: 28px 28px;
     rotate: 45deg;
     align-self: center;
     justify-self: center;
+
+  }
+
+  .our-mission-text {
+    color: #FF6C0C;
+    text-decoration: underline;
+  }
+
+  .mission-description {
+    color: #283D3B;
+    text-decoration: none;
   }
