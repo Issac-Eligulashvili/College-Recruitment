@@ -1,5 +1,6 @@
 /* General Styling */
-body,html {
+body,
+html {
     height: 100%;
 }
 
@@ -9,14 +10,16 @@ body,html {
     font-family: "Lalezar", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
 /* LANDING PAGE */
 
 .landingPage {
     background: linear-gradient(180deg, #FF6C0C 0%, #FF8A3E 53.5%, #FFF 100%);
     height: 100vh;
     display: grid;
-    grid-template-rows: 2fr 6fr 2fr;;
+    grid-template-rows: 2fr 6fr 2fr;
+    ;
 }
 
 .subtext {
@@ -69,7 +72,7 @@ body,html {
         opacity: 0;
     }
 
-    50%{
+    50% {
         opacity: 1;
     }
 
@@ -84,7 +87,7 @@ body,html {
         opacity: 0;
     }
 
-    50%{
+    50% {
         opacity: 1;
     }
 
@@ -99,7 +102,7 @@ body,html {
         opacity: 0;
     }
 
-    50%{
+    50% {
         opacity: 1;
     }
 
@@ -127,9 +130,9 @@ body,html {
 .img-container {
     height: 50%;
     padding: 0;
-  }
-  
-  .panoramicContainer {
+}
+
+.panoramicContainer {
     height: fit-content;
     display: flex;
     align-items: center;
@@ -138,31 +141,32 @@ body,html {
     top: 0;
     left: 0;
     flex-direction: column;
-  }
-  
-  .panoramic {
+}
+
+.panoramic {
     height: 100%;
     width: 100%;
     background-image: url(Caltech_Entrance\ 1.png);
     background-size: 180%, 180%;
     background-position: 0% 100%;
     background-repeat: no-repeat;
-  }
+    border: solid 3px black;
+}
 
-  .panoramicRow {
+.panoramicRow {
     aspect-ratio: 4000 / 1868;
     height: 100%;
-  }
+}
 
-  /* Mission / Values */
-  
-  .missionGrid {
+/* Mission / Values */
+
+.missionGrid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-  }
+}
 
-  .missionHeading {
+.missionHeading {
     color: #FF6C0C;
     font-size: 72px;
     grid-column: 1;
@@ -170,29 +174,47 @@ body,html {
     z-index: 2;
     align-self: center;
     justify-self: center;
-  }
-  
-  .dotBG {
+}
+
+.dotBG {
     grid-column: 1;
     grid-row: 1;
     width: 40%;
     aspect-ratio: 1 / 1;
     background-color: #ffffff;
-opacity: 0.6;
-background-image: radial-gradient(#dadada 6px, #ffffff 6px);
-background-size: 28px 28px;
+    opacity: 0.6;
+    background-image: radial-gradient(#dadada 6px, #ffffff 6px);
+    background-size: 28px 28px;
     rotate: 45deg;
     align-self: center;
     justify-self: center;
 
-  }
+}
 
-  .our-mission-text {
+.our-mission-text {
     color: #FF6C0C;
-    text-decoration: underline;
-  }
 
-  .mission-description {
+}
+
+.mission-description {
     color: #283D3B;
     text-decoration: none;
-  }
+    line-height: 2.2;
+}
+
+.valuesSubtext {
+    line-height: 2.2;
+    opacity: 0.8;
+}
+
+.st0 {
+    fill: #FF6C0C;
+}
+
+.honorLogo {
+    width: 50px;
+}
+
+.integrityIcon {
+    fill: #FF6C0C;
+}
