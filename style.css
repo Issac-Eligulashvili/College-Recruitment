@@ -4,7 +4,6 @@ html {
     height: 100%;
 }
 
-
 /* Fonts */
 .lalezar-regular {
     font-family: "Lalezar", system-ui;
@@ -217,4 +216,42 @@ html {
 
 .integrityIcon {
     fill: #FF6C0C;
+}
+
+/* ADMISSIONS + AID */
+.priceBtn {
+    background-color: #FF6C0C;
+    color: white;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 360deg;
+    inherits: false;
+
+}
+
+.pie-chart {
+    width: 70%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: conic-gradient(#FF6C0C var(--angle), #f3f3f3 90deg);
+}
+
+.price {
+    width: 30%;
+    background: white;
+    color: #FF6C0C;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.pie-chart.low {
+    animation: lowIncome 2s linear forwards;
+}
+
+@keyframes lowIncome {
+    to {
+        --angle: 230deg;
+    }
 }
