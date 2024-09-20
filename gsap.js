@@ -1,6 +1,5 @@
+import gsap from 'gsap';
 //scroll animations
-
-gsap.registerPlugin(ScrollTrigger);
 
 let tl = gsap.timeline({
     scrollTrigger: {
@@ -42,3 +41,4 @@ tl.to('.panoramic', {
 }), 1;
 
 
+console.log(1 + 3);
