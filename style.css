@@ -4,6 +4,19 @@ html {
     height: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF6C0C;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 /* Fonts */
 .lalezar-regular {
     font-family: "Lalezar", system-ui;
@@ -123,7 +136,7 @@ html {
 .welcome {
     text-transform: uppercase;
     color: #FF8A3E;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .img-container {
@@ -167,7 +180,7 @@ html {
 
 .missionHeading {
     color: #FF6C0C;
-    font-size: 72px;
+    font-size: 32px;
     grid-column: 1;
     grid-row: 1;
     z-index: 2;
@@ -222,6 +235,12 @@ html {
 .priceBtn {
     background-color: #FF6C0C;
     color: white;
+    font-size: 1.20rem;
+    border: solid 3px #ff6c0c;
+}
+
+.priceBtn:hover {
+    border: solid 3px #ff6c0c;
 }
 
 @property --angle {
@@ -235,23 +254,176 @@ html {
     width: 70%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: conic-gradient(#FF6C0C var(--angle), #f3f3f3 90deg);
+    background: conic-gradient(#FF6C0C var(--angle), rgba(245, 245, 245, 0.6) 1deg);
+    position: relative;
+    overflow: hidden;
+}
+
+.chart-wrap {
+    height: 100%;
 }
 
 .price {
-    width: 30%;
+    width: 50%;
     background: white;
     color: #FF6C0C;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
+    z-index: 2;
 }
 
 .pie-chart.low {
     animation: lowIncome 2s linear forwards;
 }
 
+.pie-chart.medium {
+    animation: medIncome 2s linear forwards;
+}
+
+.pie-chart.medium-high {
+    animation: medHighIncome 2s linear forwards;
+}
+
+.pie-chart.high {
+    animation: highIncome 2s linear forwards;
+}
+
 @keyframes lowIncome {
     to {
-        --angle: 230deg;
+        --angle: 40deg;
+    }
+}
+
+@keyframes medIncome {
+    to {
+        --angle: 126deg;
+    }
+}
+
+@keyframes medHighIncome {
+    to {
+        --angle: 208deg;
+    }
+}
+
+@keyframes highIncome {
+    to {
+        --angle: 295deg;
+    }
+}
+
+/* Table */
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #FF6C0C;
+    color: white;
+}
+
+/* MAJORS STYLING */
+.orange {
+    color: #ff6c0c;
+}
+
+select {
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.majorsCard {
+    line-height: 1.2;
+    padding: 10px;
+    border: none;
+    background-color: rgba(245, 245, 245, 0.7);
+    height: 100%;
+}
+
+.majorsCard>h3 {
+    color: #FF6C0C;
+}
+
+.learnMoreButton {
+    padding: 15px;
+    background: #FF6C0C;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+}
+
+/* ALUMNI */
+
+.carousel-caption {
+    font-size: 1.2rem;
+}
+
+.scroller-inner {
+    display: flex;
+    gap: 5rem;
+    padding-block: 1rem;
+}
+
+.scroller[data-animated=true] {
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller-inner img {
+    height: 32px;
+}
+
+.scroller[data-animated=true] .scroller-inner {
+    flex-wrap: nowrap;
+    animation: scroll 20s infinite linear;
+    width: fit-content;
+}
+
+.scroller[data-animated=true] .scroller-inner:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-50% - 2.5rem));
+    }
+}
+
+/* Custom Font Sizing */
+
+/* SM+ SIZED SCREEN */
+@media screen and (min-width:576px) {
+    .missionHeading {
+        font-size: 36px;
+    }
+
+    .welcome {
+        font-size: 4rem;
+    }
+}
+
+/* MED+ SIZED SCREEN  */
+
+@media screen and (min-width:768px) {
+    .priceNum {
+        font-size: 2rem !important;
+    }
+
+    .missionHeading {
+        font-size: 64px;
+    }
+}
+
+/* LG+ SIZED SCREEN */
+@media screen and (min-width:992px) {
+    .priceNum {
+        font-size: 2rem !important;
+    }
+
+    .missionHeading {
+        font-size: 72px;
     }
 }

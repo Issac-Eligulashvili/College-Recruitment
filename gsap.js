@@ -1,3 +1,4 @@
+
 //scroll animations
 
 let tl = gsap.timeline({
@@ -7,7 +8,7 @@ let tl = gsap.timeline({
         end: '400% center',
         scrub: true,
         pin: true,
-        markers: true,
+        markers: false,
     }
 });
 tl.to('.img-container', {
@@ -15,6 +16,7 @@ tl.to('.img-container', {
     width: "100%",
     height: "90%",
 }, 0);
+
 
 gsap.set('.panoramic', { backgroundSize: '180% 180%' });
 
@@ -39,3 +41,4 @@ tl.to('.panoramic', {
 }), 1;
 
 
+console.log(1 + 3);
