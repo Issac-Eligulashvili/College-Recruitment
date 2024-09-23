@@ -4,6 +4,11 @@ html {
     height: 100%;
 }
 
+:root,
+[data-bs-theme=light] {
+    --bs-border-color: #ff6c06;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -390,6 +395,10 @@ select {
     to {
         transform: translateX(calc(-50% - 2.5rem));
     }
+}
+
+.text-body-secondary {
+    color: #ff6c0c !important;
 }
 
 /* Custom Font Sizing */
