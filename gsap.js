@@ -1,4 +1,4 @@
-import gsap from 'gsap';
+
 //scroll animations
 
 let tl = gsap.timeline({
