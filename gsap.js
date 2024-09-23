@@ -8,7 +8,7 @@ let tl = gsap.timeline({
         end: '400% center',
         scrub: true,
         pin: true,
-        markers: true,
+        markers: false,
     }
 });
 tl.to('.img-container', {

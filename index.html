@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="scroll-container">
   <!-- Landing Page -->
   <div class="container-fluid landingPage">
     <!-- navbar -->
@@ -36,17 +36,18 @@
         </button>
         <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
           <div class="navbar-nav w-100 justify-content-evenly lalezar-regular">
-            <a class="nav-link active text-white fs-5 text-uppercase" aria-current="page" href="#">Academic Programs</a>
-            <a class="nav-link text-white fs-5 text-uppercase" href="#">Student Life</a>
-            <a class="nav-link text-white fs-5 text-uppercase" href="#">Admissions + Aid</a>
-            <a class="nav-link accordion text-white fs-5 text-uppercase" href="#">Alumni</a>
+            <a class="nav-link active text-white fs-5 text-uppercase" aria-current="page"
+              href="#academicPrograms">Academic Programs</a>
+            <a class="nav-link text-white fs-5 text-uppercase" href="#studentLife">Student Life</a>
+            <a class="nav-link text-white fs-5 text-uppercase" href="#admissionsAndAid">Admissions + Aid</a>
+            <a class="nav-link accordion text-white fs-5 text-uppercase" href="#alumni">Alumni</a>
           </div>
         </div>
         <img src="Search.svg">
       </div>
     </nav>
     <!-- main content -->
-    <div class="row justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center m-0">
       <div class="col-8 text-center d-flex justify-content-center align-items-center flex-column">
         <div class="mainLogo">
           <img src="Caltech Logo 1.png" class="w-100 animate__fadeInDown animate__animated">
@@ -168,7 +169,7 @@
 
     </div>
     <!-- ADMISSIONS + AID -->
-    <div class="row justify-content-center mt-5">
+    <div class="row justify-content-center mt-5" id="admissionsAndAid">
       <div class="col-9 mt-2">
         <h1 class="lalezar-regular text-uppercase m-0" style="color: #FF6C0C;">Admissions + Aid
         </h1>
@@ -247,7 +248,7 @@
 
     </div>
     <!-- TOP 30 MAJORS -->
-    <div class="row mt-5 justify-content-center">
+    <div class="row mt-5 justify-content-center" id="academicPrograms">
       <div class="col-9 text-center">
         <h1 class="lalezar-regular mt-3 orange">
           Take a look at our top 30 Majors
@@ -271,7 +272,7 @@
       </div>
     </div>
     <!-- Student Life -->
-    <div class="row mt-3 justify-content-center">
+    <div class="row mt-3 justify-content-center" id="studentLife">
       <div class="col-9 lalezar-regular">
         <h1 class="orange">
           Student Life
@@ -427,7 +428,7 @@
       </div>
     </div>
     <!-- Our Alumni -->
-    <div class="row mt-5 justify-content-center">
+    <div class="row mt-5 justify-content-center" id="alumni">
       <div class="col-9 lalezar-regular">
         <h1 class="orange">Our Alumni</h1>
         <!-- Alumni Carousel -->
